@@ -19,8 +19,15 @@ $(document).ready(function() {
 
     let newArray = [];
     newArray.push(finalArray[1], finalArray[0], finalArray[2]);
-    console.log(newArray);
+    $('#myList').append("<li>" + newArray[0] + "</li>");
+    $('#myList').append("<li>" + newArray[1] + "</li>");
+    $('#myList').append("<li>" + newArray[2] + "</li>");
+    // let ul = document.createElement('ul');
+    // $('#myList').append(ul);
 
+    // let li = document.createElement('li');
+    // ul.append(li);
+    // li.innerHTML(newArray[0]);
 
   });
 });
