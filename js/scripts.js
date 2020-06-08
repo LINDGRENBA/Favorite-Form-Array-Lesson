@@ -2,10 +2,10 @@
 
     function addTo(item1, item2, item3, item4) {
       let favoriteArray = [];
-      favoriteArray.push(item1);
-      favoriteArray.push(item2);
-      favoriteArray.push(item3);
-      favoriteArray.push(item4);
+      favoriteArray.push(item1, item2, item3, item4);
+      // favoriteArray.push(item2);
+      // favoriteArray.push(item3);
+      // favoriteArray.push(item4);
       console.log("first console.log" + favoriteArray);
       return favoriteArray;
     }
