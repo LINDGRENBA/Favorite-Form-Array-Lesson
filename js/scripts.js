@@ -3,10 +3,6 @@
     function addTo(item1, item2, item3, item4) {
       let favoriteArray = [];
       favoriteArray.push(item1, item2, item3, item4);
-      // favoriteArray.push(item2);
-      // favoriteArray.push(item3);
-      // favoriteArray.push(item4);
-      console.log("first console.log" + favoriteArray);
       return favoriteArray;
     }
 
@@ -20,7 +16,11 @@ $(document).ready(function() {
     let userFavoriteDestination = $('#destination').val();
     let userFavoritePlant = $('#plant').val();
     let finalArray = addTo(userFirstName, userLastName, userFavoriteDestination, userFavoritePlant);
-    console.log("second console.log" + finalArray)
+
+    let newArray = [];
+    newArray.push(finalArray[1], finalArray[0], finalArray[2]);
+    console.log(newArray);
+
 
   });
 });
